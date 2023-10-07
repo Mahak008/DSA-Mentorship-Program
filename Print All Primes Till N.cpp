@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-  int start = 1, end = 10;
-  bool flag;
+  int start, end;
+  cin >> start >> end;
 
   for(int i = start; i <= end; i++){
-    flag = 1;
+    bool flag = 1;
     if(i == 1) {
         continue;
     }
