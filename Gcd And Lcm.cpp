@@ -10,9 +10,9 @@ int gcd(int a, int b) {
     return a;
   }
   if(a > b) {
-    return gcd(a-b, b);
+    return gcd(a-b, b); // OR a % b
   }
-  return gcd(a, b-a);
+  return gcd(a, b-a); // OR b % a
 }
 
 // LCM
