@@ -1,6 +1,33 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int main() {
+  int num, k;
+  cin >> num >> k;
+
+  string s = to_string(num);
+  string str;
+  int l = s.length();
+  int leng = l - k;
+
+  for(int i = leng; i < l; i++) {
+    str += s[i];
+  }
+
+  for(int i = 0; i < leng; i++) {
+    str += s[i];
+  }
+
+  cout << str;
+
+  return 0;
+}
+
+// Another Method
+
+#include <bits/stdc++.h>
+using namespace std;
+
 int digit(int num) {
   int count = 0;      
   while(num) {
