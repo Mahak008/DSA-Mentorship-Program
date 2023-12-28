@@ -1,4 +1,4 @@
-int main(int argc, char**argv){
+int main(){
   int marks;
   cin>>marks;
   if(marks > 90) {
