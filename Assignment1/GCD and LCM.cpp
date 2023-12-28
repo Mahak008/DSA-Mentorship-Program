@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 // GCD
 int gcd(int a, int b) {
   if(a == 0 || a == b) {
@@ -25,3 +22,7 @@ int main() {
   cout << gcd(a,b) << endl << lcm(a,b);
   return 0;
 }
+
+// Output -
+// 12
+// 72
