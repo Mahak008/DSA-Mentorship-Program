@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 int main() {
   int num, k;
   cin >> num >> k;
@@ -24,9 +21,6 @@ int main() {
 }
 
 // Another Method
-
-#include <bits/stdc++.h>
-using namespace std;
 
 int digit(int num) {
   int count = 0;      
