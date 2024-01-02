@@ -9,7 +9,7 @@ for(int i = 1; i <= 2*n-1; i++) {
         cout << " ";
     }
     
-    //spaces
+    //stars
     for(int k = 0; k < stars; k++) {
         cout << "*";
     }
