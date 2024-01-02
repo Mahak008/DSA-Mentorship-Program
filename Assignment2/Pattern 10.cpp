@@ -1,48 +1,32 @@
-int n = 3, i, j, spaces = 0;
-for(i = 0; i < n; i++) {
+int n = 3;
+int spaces = n, c_space = -1;
 
-  // spaces
-  for(j = 0; j < n-i-1; j++) {
-    cout << " ";
-  }
-  cout << "*";
+for(int i = 1; i <= 2*n-1; i++) {
 
-  // spaces
-  for(j = 1; j < spaces; j++) {
-    cout << " ";
-  }
-  if(i == 0) {
-    cout << " ";
-  }
-  else {
+    // spaces
+    for(int j = 1; j <= spaces; j++) {
+        cout << " ";
+    }
     cout << "*";
-  }
-  spaces+=2;
-  cout << endl;
-}
 
-spaces = 2*n-5;
-for(i = 1; i < n; i++) {
+    //spaces
+    for(int k = 1; k <= c_space; k++) {
+        cout << " ";
+    }
+    if (i > 1 && i < 2*n-1) {
+        cout << "*";
+    }
 
-  // spaces
-  for(j = 0; j < i; j++) {
-    cout << " ";
-  }
-  cout << "*";
+    if(i < n) {
+        spaces--;
+        c_space+=2;
+    }
+    else {
+        spaces++;
+        c_space -= 2;
+    }
 
-  // spaces
-  for(j = 0; j < spaces; j++) {
-    cout << " ";
-  }
-
-  if(i != n-1) {
-    cout << "*";
-  }
-  else {
-    cout << "";
-  }
-  spaces-=2;
-  cout << endl;
+    cout <<endl;
 }
 
 // Output - 
