@@ -1,4 +1,4 @@
-// GCD
+// GCD - Euclidean Algorithm
 int gcd(int a, int b) {
   if(a == 0 || a == b) {
     return b;
