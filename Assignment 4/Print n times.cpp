@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 void words(int x, vector<string> &ans) {
   if (x == 0) {
     return;
